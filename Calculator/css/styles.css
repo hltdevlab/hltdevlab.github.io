@@ -1,0 +1,99 @@
+body {
+  /* background: grey; */
+  font-family: sans-serif;
+}
+
+.disable-select, .btn-common {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.calculator {
+  min-width: 350px;
+  max-width: 350px;
+  width: 350px;
+  min-height: 500px;
+  max-height: 500px;
+  height: 500px;
+  padding: 5px;
+  border-radius: 10px;
+  background: steelblue;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.display {
+  border-radius: 10px;
+  margin: 2px;
+  grid-column: 1 / -1;
+  grid-template-rows: 1fr 1fr;
+  background: darkseagreen;
+  padding: 5px;
+  word-break: break-all;
+}
+
+#display-top {
+  text-align: right;
+  min-height: 2em;
+  font-size: 1em;
+}
+
+#display-btm {
+  text-align: right;
+  font-size: 2em;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.btn-common {
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 2px;
+  font-size: 2em;
+  color: white;
+  outline: none;
+  background-image: linear-gradient(45deg, black, white);
+}
+
+.btn-common:active {
+  border: none;
+  background-image: linear-gradient(135deg, black, white);
+}
+
+#btn-clear {
+  background-image: linear-gradient(45deg, darkred, white);
+}
+
+#btn-clear:active {
+  background-image: linear-gradient(135deg, darkred, white);
+}
+
+#btn-del {
+  background-image: linear-gradient(45deg, darkblue, white);
+}
+
+#btn-del:active {
+  background-image: linear-gradient(135deg, darkblue, white);
+}
+
+#btn-equal {
+  color: black;
+  background-image: linear-gradient(45deg, darkorange, white);
+}
+
+#btn-equal:active {
+  background-image: linear-gradient(135deg, darkorange, white);
+}
+
+.btn-operator {
+  background-image: linear-gradient(45deg, darkgreen, white);
+}
+
+.btn-operator:active {
+  background-image: linear-gradient(135deg, darkgreen, white);
+}
