@@ -1,0 +1,85 @@
+@media all and (max-width: 480px) {
+    .nav-container {
+        --togger-menu-animation-duration: 0.2s;
+    }
+
+    .nav-container--expand {
+        animation: overflow-visible-in var(--togger-menu-animation-duration) forwards;
+    }
+
+    .nav-container--collapse {
+        animation: overflow-hidden-out var(--togger-menu-animation-duration) forwards;
+    }
+
+    .nav-container--expand .nav {
+        animation:
+            slide-down-in var(--togger-menu-animation-duration) forwards,
+            fade-in var(--togger-menu-animation-duration) forwards;
+    }
+
+    .nav-container--collapse .nav {
+        animation:
+            slide-up-out var(--togger-menu-animation-duration) forwards,
+            fade-out var(--togger-menu-animation-duration) forwards;
+    }
+}
+
+@keyframes slide-down-in {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up-out {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-500%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes overflow-visible-in {
+    0% {
+        overflow: hidden;
+    }
+    1% {
+        overflow: visible;
+    }
+    100% {
+        overflow: visible;
+    }
+}
+
+@keyframes overflow-hidden-out {
+    0% {
+        overflow: visible;
+    }
+    99% {
+        overflow: visible;
+    }
+    100% {
+        overflow: hidden;
+    }
+}

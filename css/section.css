@@ -1,0 +1,45 @@
+section {
+    --nav-container-height-offset: calc(
+        var(--navlink-height)
+        + calc(2 * var(--navlink-margin))
+    );
+    --topheader-height-offset: calc(
+        var(--topheader-height)
+        + calc(2 * 10px)
+    );
+}
+
+section {
+    padding: 10px;
+    padding-top: calc(
+        var(--nav-height) + 20px
+    );
+    height: calc(
+        100vh
+        - calc(var(--nav-height) + 30px)
+    );
+    overflow: hidden;
+}
+
+section#home {
+    padding-top: 10px;
+    height: calc(
+        calc(100vh - 30px)
+        - calc(
+            var(--topheader-height-offset)
+            + var(--nav-container-height-offset)
+        )
+    );
+
+    height: calc(
+        calc(100vh - 50px)
+        - calc(
+            var(--topheader-height)
+            + var(--nav-height)
+        )
+    );
+}
+
+section#about-me {
+    background: var(--third-color);
+}

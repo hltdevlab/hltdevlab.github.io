@@ -1,16 +1,75 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hltdevlab</title>
-  </head>
-  <body>
-    hello github page!
-    <ul>
-      <li>
-        <a href="/Calculator">Calculator</a>
-      </li>
-      <li>
-        <a href="/ReactResponsiveCarouselExample">ReactResponsiveCarouselExample</a>
-      </li>
-    </ul>
-  </body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toggleMenu.css">
+    <link rel="stylesheet" href="css/section.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="topheader">
+        hltdevlab
+    </header>
+
+    <div id="nav-container" class="nav-container">
+        <div class="toggle-menu-btn-container">
+            <button
+                id="toggle-menu-btn"
+                class="navlink toggle-menu-btn"
+                onclick="toggleMenu(this)"
+                title="Expand/Collapse"
+            >
+                =
+            </button>
+        </div>
+
+        <nav class="nav">
+            <button
+                class="navlink"
+                data-url="/"
+                onclick="hyperlink(this)"
+            >
+                Home
+            </button>
+            <button
+                class="navlink"
+                data-url="#about-me"
+                onclick="hyperlink(this)"
+            >
+                About Me
+            </button>
+        </nav>
+    </div>
+
+    <main class="main">
+        <section id="home">
+            <h1>Home</h1>
+            Content here...
+            <ul>
+                <li>
+                    <a href="/Calculator">Calculator</a>
+                </li>
+                <li>
+                    <a href="/ReactResponsiveCarouselExample">ReactResponsiveCarouselExample</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about-me">
+            <h1>About Me</h1>
+            Nothing much about me...
+            
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio commodi ipsam officia mollitia, atque quod assumenda eum velit in laudantium est! Hic cupiditate ipsum, veritatis officia suscipit quae quod sint aspernatur ratione animi consequatur, repellat adipisci laudantium veniam odit rem enim quo temporibus reiciendis vero in obcaecati eius! Iste ab ipsum distinctio nobis corporis, exercitationem ad amet totam unde, accusamus illum, sunt cumque voluptas nisi at? Accusantium sunt voluptas, maxime, at nostrum similique illo qui, itaque recusandae molestiae iste quod. Placeat optio labore, nam illum deserunt natus ratione quis non id quam laboriosam harum explicabo, aliquam doloremque sed minus expedita ab porro nemo in. Fugiat dicta assumenda iste omnis voluptates asperiores? Voluptatum voluptatibus quaerat, ipsam assumenda minus sed repellat vitae, nisi veniam neque impedit cum expedita possimus consectetur eaque optio. Asperiores necessitatibus molestias dignissimos, corrupti assumenda neque mollitia sit adipisci tenetur quae earum cumque dolores aliquid accusamus! Praesentium incidunt, ipsa delectus repellendus neque unde fugiat dignissimos, consequatur nemo qui illum. Atque odit quaerat saepe alias praesentium libero soluta consequatur voluptatibus fugit? Eaque consequatur quaerat adipisci repudiandae quia, illum sunt eos, neque saepe possimus corporis laboriosam ut vel totam at ullam, est quisquam vero! Alias maiores in, eos fugit nulla et vero minima odit sequi totam, quam perferendis debitis reprehenderit exercitationem enim voluptatum modi porro omnis saepe repellendus consequatur! Fugiat deleniti ea temporibus voluptatum sit, dicta error doloribus eaque repudiandae id aut et culpa fuga ut suscipit obcaecati exercitationem quo numquam? Ipsum porro dicta reiciendis, amet, optio exercitationem provident architecto tempore officiis nisi quisquam voluptas nobis obcaecati iure sequi? Sapiente laborum aperiam, explicabo quae, eum eaque delectus ipsum pariatur animi nulla necessitatibus deserunt! Eius, ducimus minima voluptas vel laborum vero soluta, perspiciatis ab hic deleniti a voluptatibus consequuntur ut assumenda obcaecati debitis recusandae magnam explicabo provident ex in, unde dolor iusto aliquid. Ullam illo recusandae, odit corporis maxime esse explicabo dolore id commodi eos suscipit unde dolores debitis. Laboriosam sunt, repellat ipsum ad id reiciendis eligendi earum nemo sapiente consequuntur nihil maxime unde aut in, tenetur placeat, repudiandae officiis quae esse distinctio ratione. Blanditiis fugit quod expedita eligendi! Minima recusandae laudantium veniam, aliquid dignissimos modi voluptates quas dolores magni. Quos mollitia ducimus, laborum modi, consequuntur pariatur incidunt eos voluptates perferendis possimus unde? Quasi dolorem quod sint quidem accusantium? Mollitia dolorem rem deleniti, illum omnis temporibus recusandae aperiam, consectetur ullam laborum veniam itaque expedita nemo molestiae? Magni, asperiores odio culpa voluptatum assumenda beatae similique error? Delectus illo dolore aperiam voluptatum laudantium eaque quaerat repellat vitae! Assumenda id et adipisci, pariatur saepe laudantium est molestiae quasi voluptatibus libero eveniet cupiditate quo quas veritatis voluptate labore! Nam iure nesciunt labore quidem impedit repudiandae placeat esse alias, ipsa cumque! Laudantium nihil quasi voluptatum in sed minima dolor ullam temporibus nostrum maiores nesciunt amet aspernatur, ratione laboriosam tempora deleniti veritatis. Autem eveniet, inventore, voluptas provident quasi aliquam atque laborum a voluptatum placeat praesentium minima voluptate cum dolore impedit architecto enim asperiores neque maiores labore perferendis in nostrum quia totam. Amet ad nemo provident illum error!
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Copyright by hltdevlab
+    </footer>
+</body>
 </html>
